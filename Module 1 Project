@@ -1,0 +1,40 @@
+#Module 2:Mini-Project] To-Do list Application
+#User Interface(UI)
+    # 1. Add a task
+    # 2. View tasks
+    # 3. Mark a task as complete
+    # 4. Delete a task
+    # 5. Quit
+
+didComplete_Tasks = {}
+
+while True:
+    print("""What would you like to do? 
+                1.Add a task
+                2. View tasks
+                3. Mark a task as complete
+                4. Delete a task
+                5. Quit""")
+    response = input("Enter a Number: ")
+
+    #2. To do list
+    if response == "1":
+            task = input("Enter the task: ").lower()
+            didComplete_Tasks[task] = "Incomplete"
+
+    if response == "2":
+        for key, value in didComplete_Tasks:
+                didComplete_Tasks.items()
+                print(key, "->", value)
+    if response == "3":
+        task = input("Enter the task: ").lower()
+        for i in didComplete_Tasks:
+            if task == i:
+                didComplete_Tasks[task] = "Complete"
+        if response == "4":
+            del didComplete_Tasks[input("Enter a task: ")]
+        
+        if  response == "5":
+            print("complete")
+        else: 
+            print("please enter valid response")
